@@ -6,7 +6,7 @@ After=network.target
 [Service]
 User=ubuntu
 Group=www-data
-WorkingDirectory=/home/ubuntu/pos_backend
+WorkingDirectory=/home/ubuntu/posbackend
 ExecStart=/home/ubuntu/venv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \

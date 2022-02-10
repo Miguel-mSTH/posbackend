@@ -1,10 +1,10 @@
 server {
     listen 80;
-    server_name 18.206.247.20;
+    server_name 44.202.22.99;
 
     location = /favicon.ico { access_log off; log_not_found off; }
     location /static/ {
-        root /home/ubuntu/pos_backend;
+        root /home/ubuntu/posbackend;
     }
 
     location / {
