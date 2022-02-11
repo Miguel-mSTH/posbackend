@@ -6,8 +6,8 @@ After=network.target
 [Service]
 User=ubuntu
 Group=www-data
-WorkingDirectory=/home/ubuntu/posbackend
-ExecStart=/home/ubuntu/venv/bin/gunicorn \
+WorkingDirectory=/home/codigo/posbackend
+ExecStart=/home/codigo/venv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
